@@ -11,11 +11,11 @@ a,
 
 .btn.btn-primary:hover,
 .btn-submit:hover {
-  background-color: #6ea100
+  background-color:rgba(0,120,92,0.9);
 }
 
 a:hover, a:focus {
-	color: #6ea100;
+	color: rgba(0,120,92,0.9);
 }
 
 .main-nav,
@@ -34,7 +34,7 @@ a:hover, a:focus {
 .left-control:hover,
 .right-control:hover,
 .folio-overview a:hover {
-  background-color:#25BA03;
+  background-color:rgba(17, 57, 5, 0.9);
 }
 
 .twitter-left-control:hover,
@@ -46,9 +46,9 @@ a:hover, a:focus {
 .caption .btn-start:hover,
 .left-control:hover,
 .right-control:hover {
-	border-color: #25BA03;
+	border-color:rgba(17, 57, 5, 0.9);
 }
 
 .twitter-icon .fa-twitter:after {
-	border-color: #25BA03 transparent transparent;
+	border-color:rgba(17, 57, 5, 0.9) transparent transparent;
 }
