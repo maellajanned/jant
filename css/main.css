@@ -579,21 +579,21 @@ section {
 /*************************
 *******Features CSS*******
 **************************/
-#features {
+/*#features {
   text-align: center;
   background-image: url(../images/12.jpg);
+*/}
+.partner
+{
+  text-align: center;
 }
-
-#features i {
-  font-size: 48px;
-}
-
+/*
 #features h3 {
   margin-top: 15px;
   font-size: 30px;
   margin-bottom: 7px;
   color: #fff;
-}
+}*/
 
 #features .slider-overlay {
   opacity: 0.8;
@@ -803,7 +803,7 @@ ul.address {
   color: #fff;
   border:0;
   margin-top: 40px;
-}
+  }
 
 #footer {
   color:#fff;
