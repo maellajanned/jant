@@ -358,6 +358,12 @@ section {
   transition:  width 2s ease-in-out;
 }
 
+#about-us
+{
+  color: white;
+  font-size: 1.3em;
+}
+
 /*************************
 ********portfolio CSS*****
 **************************/
