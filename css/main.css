@@ -216,6 +216,9 @@ section {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.log{
+  color:rgba(232,120,8,0.9);
+}
 
 .left-control {
   left: -51px
@@ -575,6 +578,7 @@ section {
 
 .member-info h3 {
   margin-top: 35px;
+  color:rgba(232,120,8,0.9);
 }
 
 .member-info h4 {
