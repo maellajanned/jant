@@ -11,8 +11,9 @@ body {
   background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
+h1,h2, h3, h4, h5, h6 {
+  /*color: #333;*/
+  color:#0B3C0F;
 }
 
 h2 {
@@ -52,7 +53,7 @@ h3 {
 .parallax textarea,
 .parallax textarea:hover {
   font-weight: 300;
-  color: black;
+  color: rgba(9,55,11,0.9);
 }
 
 .btn {
@@ -315,7 +316,8 @@ section {
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.png);
+/*  background-image: url(../images/about-bg.png);*/
+  background-color: rgba(9,55,11,0.8);
   padding: 60px 0;
 }
 
