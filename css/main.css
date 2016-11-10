@@ -11,7 +11,7 @@ body {
   background-color: white;
 }
 
-h1,h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   /*color: #333;*/
   color:#0B3C0F;
 }
@@ -41,19 +41,21 @@ h3 {
 .parallax h6 {
   color:black;
 }
-
 .parallax input[type="text"],
-.parallax input[type="text"]:hover,
 .parallax input[type="email"],
-.parallax input[type="email"]:hover,
-.parallax input[type="url"],
-.parallax input[type="url"]:hover,
 .parallax input[type="password"],
+.parallax input[type="url"],
+.parallax textarea{
+    font-weight: 300;
+}
+
+.parallax input[type="text"]:hover,
+.parallax input[type="email"]:hover,
+.parallax input[type="url"]:hover,
 .parallax input[type="password"]:hover,
-.parallax textarea,
 .parallax textarea:hover {
   font-weight: 300;
-  color: rgba(9,55,11,0.9);
+  color: rgba(9,55,11,0.9)!important;
 }
 
 .btn {
@@ -266,7 +268,7 @@ section {
 }
 
 .navbar-right li.active a {
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(242,180,19,.8);
 }
 
 .navbar-brand h1 {
@@ -290,7 +292,7 @@ section {
 }
 
 .our-services .col-sm-4:hover .service-icon {
-  background-color: #333;
+  background-color: #F2B413;
 }
 
 .our-services .col-sm-4 {
@@ -772,11 +774,11 @@ section {
 
 .form-control {
   background-color: transparent;;
-  border-color: rgba(10,186,10,.8);
+  border-color: rgba(9,55,11,.9);
   height: 50px;
   border-radius: 0;
   box-shadow: none;
-  color: black;
+
 }
 
 textarea.form-control {
@@ -786,6 +788,7 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 30px;
+
 }
 
 .contact-info {
