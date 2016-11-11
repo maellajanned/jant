@@ -157,6 +157,6 @@ jQuery(function($) {
 			infowindow.open(map,marker);
 		});
 	}
-		google.maps.event.addDomListener(window, 'load', my_map());
+		google.maps.event.addDomListener(window, 'load', my_map);
 
 });
