@@ -885,3 +885,21 @@ ul.address {
 }
 
 /*Presets*/
+
+/* formulaire */
+
+::-webkit-input-placeholder {
+   color: black !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black !important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black !important;  
+}
+
+:-ms-input-placeholder {  
+   color: black !important;  
+}
