@@ -154,9 +154,9 @@ jQuery(function($) {
 			map: map
 		});
 		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.open(map,marker);
+			infowindow.open(map, marker);
 		});
 	}
-		google.maps.event.addDomListener(window, 'load', my_map());
+		google.maps.event.addDomListener(window, 'load', my_map);
 
 });
