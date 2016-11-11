@@ -137,7 +137,7 @@ jQuery(function($) {
 	//Google Map
 	var latitude = $('#google-map').data('latitude')
 	var longitude = $('#google-map').data('longitude')
-	function initialize_map() {
+	function my_map() {
 		var myLatlng = new google.maps.LatLng(latitude,longitude);
 		var mapOptions = {
 			zoom: 14,
@@ -157,6 +157,6 @@ jQuery(function($) {
 			infowindow.open(map,marker);
 		});
 	}
-		google.maps.event.addDomListener(window, 'load', initialize_map);
+		google.maps.event.addDomListener(window, 'load', my_map);
 
 });
