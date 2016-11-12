@@ -555,13 +555,11 @@ section {
 
 #google-map {
   height: 400px;
-
-  padding-bottom: 90px;
-  background-repeat: no-repeat;
 }
 
 #contact-us {
-  background-image:url(../images/14.jpg);
+  /**background-image:url(../images/14.jpg);***/
+  background-color: rgba(242,180,19,.6);
   padding-bottom: 90px;
 }
 
@@ -570,7 +568,7 @@ section {
 }
 
 .form-control {
-  background-color: transparent;;
+  background-color: transparent;
   border-color: rgba(9,55,11,.9);
   height: 50px;
   border-radius: 0;
