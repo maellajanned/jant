@@ -6,6 +6,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>JANT</title>
+  <!-- least.js CSS-file -->
+  <link href="css/least.min.css" rel="stylesheet" />
+  <!-- jQuery libary -->
+
+  <!-- least.js JS-file -->
+
+  <!-- Lazyload JS-file -->
+
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -81,8 +89,8 @@
               <li class="scroll active"><a href="#home">Accueil</a></li>
               <li class="scroll"><a href="#about-us">Histoire</a></li>
               <li class="scroll"><a href="#team">L'équipe</a></li>
-<!--               <li class="scroll"><a href="#services">Galerie</a></li>
- -->              <li class="scroll"><a href="#contact">Contact</a></li>
+              <li class="scroll"><a href="#services">Galerie</a></li>
+              <li class="scroll"><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -182,7 +190,7 @@
   </section><!--/#team-->
 
 
-  <!-- <section id="services">
+   <!--<section id="services">
     <div class="container">
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
@@ -250,9 +258,41 @@
           </div>
         </div>
       </div>
-    </div>
-  </section><!--/#services--> -->
+    </div>-->
 
+        <section>
+            <ul id="gallery">
+                <li id="fullPreview"></li>
+
+                <li>
+                    <a href="images/full/1.jpg"></a>
+                    <img data-original="img/thumb/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Ocean
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    View Picture
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="projectInfo">
+                        <strong>
+                            Day, Month, Year
+                        </strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    </div>
+                </li>
+            </ul>
+        </section>
+  </section>
   <section id="contact">
         <div class="text-center " data-wow-duration="1000ms" data-wow-delay="300ms">
           <h2>SENEGAL</h2></div>
@@ -270,7 +310,7 @@
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div class="row">
             <div class="col-sm-6">
-              <form id="main-contact-form" name="contact-form" method="post" action="#">
+              <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -298,7 +338,7 @@
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                <ul class="address">
                   <li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>
-                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +928 336 2000 </li>
+                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +221 77 722 34 33</li>
                   <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="jant.senegal@gmail.com">jant.senegal@gmail.com</a></li>
                 </ul>
               </div>
@@ -343,6 +383,9 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?callback=my_map"></script>
+  <script src="http://code.jquery.com/jquery-latest.js" defer="defer"></script>
+  <script type="text/javascript" src="js/jquery.lazyload.js" defer="defer"></script>
+  <script type="text/javascript" src="js/least.min.js" defer="defer"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/mousescroll.js"></script>
