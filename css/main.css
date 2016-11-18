@@ -57,14 +57,14 @@ h3 {
   color: rgba(9,55,11,0.9)!important;
 }
 
-.btn {
+/*.btn {
   border: 0;
   border-radius: 0;
 }
 
 .btn.btn-primary:hover {
   background-color: #017fb5;
-}
+}*/
 
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
@@ -149,7 +149,7 @@ section {
   margin-bottom: 30px;
 }
 
-.caption .btn-start {
+/*.caption .btn-start {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -162,7 +162,7 @@ section {
 .caption .btn-start:hover {
   color: #fff
 }
-
+*/
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   -webkit-transition-property: opacity;
@@ -292,9 +292,7 @@ section {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-#services{
-  background-color: rgba(242,180,19,.9);
-}
+
 .our-services .col-sm-4:hover .service-icon {
   background-color: #F2B413;
 }
