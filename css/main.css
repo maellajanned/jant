@@ -220,7 +220,10 @@ section {
 .log{
   color:rgba(232,120,8,0.9);
 }
-
+.log1{
+  color:rgba(9,55,11,.9);
+  font-size: 1.3em;
+}
 .left-control {
   left: -51px
 }
@@ -289,7 +292,9 @@ section {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-
+#services{
+  background-color: rgba(242,180,19,.9);
+}
 .our-services .col-sm-4:hover .service-icon {
   background-color: #F2B413;
 }
