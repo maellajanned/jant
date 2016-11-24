@@ -66,6 +66,11 @@ h3 {
   background-color: #017fb5;
 }*/
 
+nav
+{
+  z-index: 1000000 !important;
+}
+
 .navbar-nav li a:hover,
 .navbar-nav li a:focus {
   outline:none;
