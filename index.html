@@ -12,6 +12,8 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset3.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/gallerie.css"/>
+  <link rel="stylesheet" type="text/css" href="css/gallerie-effects.css"/>
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -31,7 +33,7 @@
             <div class="caption">
               <h1 class="animated fadeInLeftBig">BIENVENUE SUR <span>JANT</span></h1>
               <p class="animated fadeInRightBig log">La Richesse du Soleil</p>
-              
+
             </div>
           </div>
           <div class="item" style="background-image: url(images/slider/couv.jpg)">
@@ -80,6 +82,7 @@
               <li class="scroll active"><a href="#home">Accueil</a></li>
               <li class="scroll"><a href="#about-us">Histoire</a></li>
               <li class="scroll"><a href="#services">Produits</a></li>
+                <li class="scroll"><a href="#galerie">Galérie</a></li>
               <li class="scroll"><a href="#team">L'équipe</a></li>
               <li class="scroll"><a href="#contact">Contact</a></li>
             </ul>
@@ -188,6 +191,56 @@
 
   <!-- / Produit / -->
 
+<!-- / Galérie/ -->
+     <section id="galerie">
+      <div class="container">
+        <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="row">
+            <div class="text-center col-sm-8 col-sm-offset-2">
+              <h2>Galerie</h2>
+              <p>Retrouvez toutes les images de nos activités dans cette rubrique.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center our-services">
+          <div class="row">
+            <div class="col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <a href="images/thumbs/100_3394.JPG"><img src="images/thumbs/100_3394.JPG"/></a>
+              <a href="images/thumbs/100_3395.JPG"><img src="images/thumbs/100_3395.JPG"/></a>
+              <a href="images/thumbs/100_3399.JPG"><img src="images/thumbs/100_3399.JPG"/></a>
+              <a href="images/thumbs/100_3401.JPG"><img src="images/thumbs/100_3401.JPG"/></a>
+            </div>
+            <div class="gallerie-overlay" >
+            <div class="gallerie-imagebox"><img class="gallerie-image" src="http://www.jant.esy.es" title="">
+              <div class="gallerie-loading" >
+              </div>
+            </div>
+            <div class="gallerie-captionbox">
+              <div class="gallerie-control gallerie-control-previous"> <<
+              </div>
+              <div class="gallerie-text">
+                <div class="gallerie-title">Le Solaire à Méckhé Sénégal</div>
+                <div class="gallerie-index">1 of 100</div>
+              </div>
+              <div class="gallerie-control gallerie-control-next"> >>
+              </div>
+            </div>
+            <div class="gallerie-thumbbox">
+              <ul>
+                <li class="gallerie-thumbbox-selected">
+                  <a href="images/thumbs/100_3394.jpg"><img src="images/thumbs/100_3394.jpg" title="cuisinière solaire">
+                  </a></li>
+          </div>
+          </div>
+          <div id="extzfdz_offer_block_bg">
+          <span>×</span></div>
+          <div>
+          <span>
+          </span>
+        </div>
+      </div>
+    </section>
+<!-- / galerie -->
   <section id="team" class="parallax">
       <div class="container">
       <div class="row">
@@ -241,75 +294,6 @@
   </section><!--/#team-->
 
 
-   <!--<section id="services">
-    <div class="container">
-      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Galerie</h2>
-            <p>Rétrouvez toutes les images de nos activités dans cette rubrique.</p>
-          </div>
-        </div>
-      </div>
-      <div class="text-center our-services">
-        <div class="row">
-          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="service-icon">
-              <i class="fa fa-flask"></i>
-            </div>
-            <div class="service-info">
-              <h3>L'électricité</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
-            <div class="service-icon">
-              <i class="fa fa-umbrella"></i>
-            </div>
-            <div class="service-info">
-              <h3>Nos Créations</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
-            <div class="service-icon">
-              <i class="fa fa-cloud"></i>
-            </div>
-            <div class="service-info">
-              <h3>Nos Forfaits</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
-            <div class="service-icon">
-              <i class="fa fa-coffee"></i>
-            </div>
-            <div class="service-info">
-              <h3>Le Solaire dans nos plats</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
-            <div class="service-icon">
-              <i class="fa fa-bitbucket"></i>
-            </div>
-            <div class="service-info">
-              <h3>Nos Ateliers </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
-            <div class="service-icon">
-              <i class="fa fa-gift"></i>
-            </div>
-            <div class="service-info">
-              <h3>Les Bonus</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
 
   <section id="contact">
         <div class="text-center " data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -355,7 +339,7 @@
             <div class="col-sm-6">
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                <ul class="address">
-                  <li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>
+                  <li><i class="fa fa-map-marker"></i> <span> Address:</span> Méckhé</li>
                   <li><i class="fa fa-phone"></i> <span> Phone:</span> +221 77 722 34 33</li>
                   <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="jant.senegal@gmail.com">jant.senegal@gmail.com</a></li>
                 </ul>
@@ -400,6 +384,7 @@
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.gallerie.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?callback=my_map"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>

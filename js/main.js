@@ -63,16 +63,6 @@ jQuery(function($) {
 	//smoothScroll
 	smoothScroll.init();
 
-	// Progress Bar
-	$('#about-us').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-		if (visible) {
-			$.each($('div.progress-bar'),function(){
-				$(this).css('width', $(this).attr('aria-valuetransitiongoal')+'%');
-			});
-			$(this).unbind('inview');
-		}
-	});
-
 	//Countdown
 	$('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
@@ -89,36 +79,44 @@ jQuery(function($) {
 			$(this).unbind('inview');
 		}
 	});
+//gallery
+$(document).ready(function(){
 
-	// Portfolio Single View
-	$('#portfolio').on('click','.folio-read-more',function(event){
-		event.preventDefault();
-		var link = $(this).data('single_url');
-		var full_url = '#portfolio-single-wrap',
-		parts = full_url.split("#"),
-		trgt = parts[1],
-		target_top = $("#"+trgt).offset().top;
+	$.ajax('https://www.jant.esy.es',{
+		data: {
+			format: 'json',
+			method: 'flickr.interestingness.getList',
+			api_key: '270e736b0e42643aab5aab7819164d84'
+		},
+		dataType: 'jsonp',
+		jsonp: 'jsoncallback'
+	}).done(function(data){
 
-		$('html, body').animate({scrollTop:target_top}, 600);
-		$('#portfolio-single').slideUp(500, function(){
-			$(this).load(link,function(){
-				$(this).slideDown(500);
+		var $gallerie = $('#galerie'),
+			$image,
+			$link,
+			base_url,
+			t_url,
+			i_url;
+
+		$.each(data.photos.photo, function(index, photo){
+			base_url = '' + photo.farm + '' + photo.server + '/' + photo.id + '_' + photo.secret;
+			t_url = base_url + '_t.jpg';
+			i_url = base_url + '_b.jpg';
+
+			$image = $('<img/>').prop({
+				'src': t_url,
+				'title': photo.title
 			});
+
+			$link = $('<a/>').prop('href', i_url).append($image);
+			$gallerie.append($link);
 		});
-	});
 
-	// Close Portfolio Single View
-	$('#portfolio-single-wrap').on('click', '.close-folio-item',function(event) {
-		event.preventDefault();
-		var full_url = '#portfolio',
-		parts = full_url.split("#"),
-		trgt = parts[1],
-		target_offset = $("#"+trgt).offset(),
-		target_top = target_offset.top;
-		$('html, body').animate({scrollTop:target_top}, 600);
-		$("#portfolio-single").slideUp(500);
-	});
+		$('#galerie').gallerie();
 
+	});
+});
 	// Contact form
 	var form = $('#main-contact-form');
 	form.submit(function(event){
